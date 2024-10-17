@@ -1,0 +1,25 @@
+** pgrap
+grep-like toy but for processes for GNU/Linux.
+
+** Info
+This is the help menu.
+#+begin_src text
+pgrap
+* Regex Types
+ --simple   - Basic search matching each character
+ --stand    - Use the C++ standard library regex implementation
+ --hs       - Use Intel hyperscan regex library
+
+* Misc
+ --pattern  - Provide the regex pattern to search
+ --mtype    - Match type for --simple argument
+ --rtype    - Special regex cases for --stand and --hs arguments
+ --total    - Total number of matches
+#+end_src
+
+pgrap support two regex engines, regex implementation from STL
+(specifically from libstdc++), and hyperscan (successor is the
+fork of hyperscan called vectorscan). There's another way to
+search for patterns, using =--simple=, but it doesn't support
+accept regex pattern. Builtin types can be provided with =--mtype=
+while using the =--simple= option.
