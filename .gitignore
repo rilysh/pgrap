@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+
+# Others
+others/
+src/comment
+src/comment2
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+.clangd
+.cache/
+pgrap
+
